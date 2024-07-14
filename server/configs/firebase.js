@@ -5,13 +5,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBWfqtm1XPZHvLK5XvFH5Bjdn61jaRTdSE",
-  authDomain: "foody-app-43742.firebaseapp.com",
-  projectId: "foody-app-43742",
-  storageBucket: "foody-app-43742.appspot.com",
-  messagingSenderId: "364610557967",
-  appId: "1:364610557967:web:b0905604914722f8422b7a"
-}
+  apiKey: "AIzaSyClAeX5WrPn0Nrv-4LxHxRBuyZRqCqvcMs",
+  authDomain: "foody-8350a.firebaseapp.com",
+  projectId: "foody-8350a",
+  storageBucket: "foody-8350a.appspot.com",
+  messagingSenderId: "236611857390",
+  appId: "1:236611857390:web:75ab2f052879332c0cfcff"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
