@@ -1,0 +1,119 @@
+.sidebar_box {
+  min-width: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  max-width: 256px;
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar_box ul {
+  width: 100%;
+  border-radius: 14px;
+  background-color: rgba(199, 79, 235, 1);
+  padding: 24px 24px 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+  align-items: flex-start;
+}
+
+.sidebar_box ul li {
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 24px;
+  cursor: pointer;
+}
+.sidebar_box ul li.active,
+.sidebar_box ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar_box ul li svg {
+  width: 24px;
+  height: 24px;
+}
+.sidebar_box ul li svg path {
+  fill: #fff;
+}
+.sidebar_box ul li span {
+  color: #fff;
+}
+.sidebar_bottom {
+  border-radius: 14px;
+  height: 80px;
+  background-color: rgba(39, 40, 60, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar_bottom p {
+  color: rgba(142, 142, 147, 1);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.sidebar_top {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.sidebar_top svg path {
+  fill: #fff;
+}
+.sidebar_top button {
+  width: 30px;
+  height: 30px;
+}
+.sidebar_shadow {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+@media (max-width: 991px) {
+  .sidebar_top {
+    display: flex;
+  }
+  .sidebar_box {
+    /* display: none; */
+    position: fixed;
+    height: 100%;
+    max-width: 80%;
+    top: 0;
+    z-index: 100;
+  }
+
+  .sidebar_box ul {
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  .sidebar_bottom {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .sidebar_top div svg {
+    width: 92px;
+    height: 34px;
+  }
+}

@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import AdminHeader from "../shared/components/admin/AdminHeader";
+import SideBar from "../shared/components/admin/SideBar/SideBar";
+import Navbar from "../shared/components/admin/Navbar/Navbar";
 
 
 
@@ -23,8 +25,13 @@ const Home: NextPage = () => {
 
   return (
     <>
-    Hello
-    <AdminHeader/>
+  
+   
+   
+
+   
+
+   
     </>
  
    
