@@ -1,0 +1,193 @@
+.addContainer{
+    position: absolute;
+    width: 70%;
+    right: 0;
+    background-color: #38394E;
+    z-index: 99999999;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+    
+}
+.addContainer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.addContainer::-webkit-scrollbar-thumb {
+    background-color: #C035A2;
+    border-radius: 6px;
+}
+
+.addContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.addContainer h2{
+    color:#C7C7C7 ;
+    font-weight: 500;
+    font-size: 25px;
+}
+.addImg{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-between ;
+}
+.addImg .addDiv{
+    background-color: #43445A;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 120px;
+}
+.additionalImg{
+    width: 80px;
+    height: 80px;
+}
+.uploadImg{
+    width: 100px;
+    height: 100px;
+    transition: width 0.3s, height 0.3s;
+}
+.addImg .addDiv:hover{
+    .uploadImg{
+        width: 90px;
+        height: 90px;
+    }
+}
+.addInfoDiv{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.addInfoDiv h2{
+    width: 30%;
+}
+.addInp{
+    background-color: #43445A;
+    width: 50%;
+    border-radius: 20px;
+}
+.addInp div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    gap: 10px;
+}
+.addInp div input,.addInp div textarea,.addInp div select{
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #5A5B70;
+    color:#F2F2F2;
+    padding: 10px;
+    border: 1px solid #5A5B70;
+}
+.addInp div input::placeholder,.addInp div textarea::placeholder{
+    color: #F2F2F2;
+}
+.addInp div input:focus,.addInp div textarea:focus{
+    border: 1px solid #b32b95;
+    outline: none;
+}
+.addInp div label{
+    color: #C7C7C7;
+    font-weight: 500;
+    font-size: 25px;
+} 
+.addButtonDiv{
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+.addButtonDiv button{
+    width: 40%;
+    font-size: 30px;
+    color: #FFF;
+    border-radius:20px ;
+    padding: 10px;
+}
+.cancelBtn{
+    background-color: #43445A;
+    border: 2px solid #38394E;
+    cursor: pointer;
+}
+.cancelBtn:hover{
+    background-color: #4f516b;
+}
+.addBtn{
+    background-color:#C035A2;
+    border:2px solid #C035A2;
+    cursor: pointer;
+}
+.addBtn:hover{
+    background-color: #c83daa;
+}
+
+.blackFont{
+    width: 30%;
+    height: 100vh;
+    background-color: #00000066;
+    position:absolute;
+    left:0;
+    z-index:  999999999999999;
+}
+.exit{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.exit:hover{
+    width: 60px;
+    height: 60px;
+    transition: width 0.3s, height 0.3s;
+}
+@media (max-width:600px){
+    .addButtonDiv button{
+        font-size: 20px;
+    }
+    .uploadImg{
+        width: 100px;
+        height: 100px;
+    }
+    .addImg .addDiv:hover{
+        .uploadImg{
+            width: 110px;
+            height: 110px;
+        }
+    }
+    .addImg .addDiv{
+        height: 120px;
+        width: 90%;
+    }
+    .addImg{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .addContainer{
+        width: 100%;
+    }
+    .addInfoDiv h2{
+        width: 90%;
+        text-align: center;
+        font-size: 25px;
+    }
+    .blackFont{
+        width: 0%;
+    }
+    .addInp{
+        width: 90%;
+    }
+    .addInfoDiv{
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        gap: 20px;
+    }
+}

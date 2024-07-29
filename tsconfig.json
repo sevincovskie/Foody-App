@@ -15,7 +15,7 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js", "shared/components/layout/ClienLayout/index.tsx", "shared/components/admin/Charts/Chart.jsx", "shared/components/admin/Modal/Modal.tsx", "shared/components/Client/Footer/ClientFooter.jsx", "shared/components/Client/Header/index.tsx"],
   "exclude": ["node_modules"],
   "paths": {
     "@/*": ["./*"]
